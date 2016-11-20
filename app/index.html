@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" class="__meteor-css__" href="https://d14xs1qewsqjcd.cloudfront.net/bbf482e8bf480e2aa66eab79dc3b69a9898503a1.css?meteor_css_resource=true">
+    <link rel="stylesheet" type="text/css" class="__meteor-css__" href="https://d14xs1qewsqjcd.cloudfront.net/534288c74c61316cf05cd2367fc63ede62913788.css?meteor_css_resource=true">
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/overwrite-site.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="gstuidoApp">
+    <div id="wrapper" class="page page-wrap page-home gs-intro-page">
+      <div class="overlay" style="display: none;"></div>
+      <div id="page-content-wrapper">
+        <div id="header-page-menu" class="header-home-page-top">
+          <div class="container-header wow fadeInUp animated" style="visibility: visible; animation-name: all;">
+            <div class="logo-company">
+              <a href="/">
+                <img id="logo-meteor-home" src="https://d14xs1qewsqjcd.cloudfront.net/assets/logo.svg" alt="Meteor Home Page">
+              </a>
+            </div>
+            <nav id="primary-menu">
+              <a id="home" class="menu-main has-sub-menu" data-letters="Home">
+                <span>Home</span>
+              </a>
+              <a id="teams" class="menu-main has-sub-menu" data-letters="Teams">
+                <span>Teams</span>
+              </a>
+              <a id="developers" class="menu-main has-sub-menu" data-letters="Developers">
+                <span>Developers</span>
+              </a>
+            </nav>
+            <div class="secondary-nav">
+              <nav>
+                <a id="login" class="menu-secondary" ng-init="showLoginPopup = false" ng-click="showLoginPopup = !showLoginPopup; showRegisterPopup = false;">Login</a>
+                <a id="register" class="menu-secondary" ng-init="showRegisterPopup = false" ng-click="showRegisterPopup = !showRegisterPopup; showLoginPopup = false;">Register</a>
+              </nav>
+              <div id="login-popup" ng-class="{'fadeInDown': showLoginPopup, 'hidden': !showLoginPopup }">
+                <div class="form-login">
+                  <h3>Login</h3>
+                  <form>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Password">
+                    <span class="error-account"></span>
+                    <button type="submit" class="action-login btn-primary-meteor hvr-rectangle-out-bg">Login</button>
+                  </form>
+                  <div class="action-form-login">
+                    <a data-url="resetPassword"><i class="icon-icon-next-short"></i><span>Forgot your Password?</span></a>
+                  </div>
+                </div>
+              </div>
+              <!--resgister-popup-->
+              <div id="resgister-popup" ng-class="{'fadeInDown': showRegisterPopup, 'hidden': !showRegisterPopup }">
+                <div class="form-register">
+                  <h3>Register</h3>
+                  <form>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="repassword" placeholder="Re-enter password">
+                    <span class="error-account"></span>
+                    <button type="submit" class="action-login btn-primary-meteor hvr-rectangle-out-bg">Register</button>
+                  </form>
+                  <div class="action-form-login">
+                    <a data-url="faq"><i class="icon-icon-next-short"></i><span>Need support?</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="icon-custom-menu  fadeInLeft is-closed" data-toggle="offcanvas">
+                <span class="icon-top"></span>
+                <span class="icon-middle"></span>
+                <span class="icon-bottom"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-inverse" id="menu-Onmobile" role="navigation">
+          <div class="list-menu-mobile">
+            <nav id="primary-menu">
+              <a id="developers" class="menu-main has-sub-menu" data-letters="Developers">
+                <span>Developers</span>
+                <ul class="sub-menu-secondary">
+                  <li><a class="menu-child">Install</a></li>
+                  <li><a class="menu-child">Tutorials</a></li>
+                </ul>
+              </a>
+            </nav>
+          </div>
+          <a id="login-nav-mobile" class="menu-secondary mobile-menu">Login</a>
+          <a id="register" class="menu-secondary mobile-menu">Register</a>
+        </nav>
+        <header>
+          <div id="meteor_particles">
+            <div id="banner-home">
+              <div class="content-banner">
+                <h6 class="wow bounceInDown" style="visibility: visible; animation-name: bounceInDown;">The best school to learn how to become the</h6>
+                <h3 class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">X Developer</h3>
+                <span class="wow zoomIn" style="visibility: visible; animation-name: zoomIn;"><span style="font-weight: 700;">Gstuido</span> is an social school-network  for web,
+                <br>mobile, desktop, IoT beginers to be the developers and more...</span>
+                <div class="action-banner wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                  <a id="installnow" class="btn-custom hvr-rectangle-out-bg cursor-pointer">learn now<span>over 1.000 Gs posts</span></a>
+                  <a id="more-features" class="btn-custom hvr-rectangle-out cursor-pointer"> write tutorial</a>
+                </div>
+              </div>
+            </div>
+            <canvas class="particles-js-canvas-el" width="510" height="400" style="width: 100%; height: 100%;"></canvas></div>
+        </header>
+    </div>
+  </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/showdown/src/showdown.js"></script>
+    <script src="bower_components/angular-markdown-directive/markdown.js"></script>
+    <script src="bower_components/particles.js/particles.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

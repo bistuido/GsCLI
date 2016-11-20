@@ -1,0 +1,85 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  border: 0;
+  line-height: 1.5;
+  font-family: 'ProximaNova-Regular', arial, sans-serif !important;
+}
+
+.gs-intro-page{
+  .cursor-pointer{
+    cursor: pointer;
+  }
+}
+
+.header-home-page-top .form-register {
+  float: right;
+  left: 0px;
+}
+
+.form-register {
+  width: 285px;
+  display: block;
+  background: #fff;
+  text-align: left;
+  position: relative;
+  padding: 30px 25px;
+  margin-top: 15px;
+  left: -155px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.form-register h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #1f2128;
+  font-family: 'ProximaNovaA-Semibold';
+  margin: 0 0 10px;
+}
+
+.form-register input {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-indent: 10px;
+  color: #8e8e8e;
+  font-style: italic;
+  margin-bottom: 15px;
+  height: 40px;
+  font-family: 'ProximaNovaT-Thin';
+  border: 1px solid #566391;
+}
+
+.form-register .btn-primary-meteor {
+  display: inline-block;
+  width: 100%;
+  background-color: #de4f4f;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.header-home-page-top .form-register:before {
+  left: 257px;
+}
+
+.form-register:before {
+  position: absolute;
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 9px solid #fff;
+  top: -9px;
+  display: block;
+}
